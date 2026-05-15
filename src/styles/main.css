@@ -1,0 +1,5 @@
+/* Entry stylesheet — imports the partials in cascade order */
+@import "./tokens.css";
+@import "./reset.css";
+@import "./layout.css";
+@import "./sections.css";
