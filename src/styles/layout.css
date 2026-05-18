@@ -173,9 +173,14 @@
   }
 
   .primary-nav__list a:hover::after,
-  .primary-nav__list a:focus-visible::after {
+  .primary-nav__list a:focus-visible::after,
+  .primary-nav__list a[aria-current="page"]::after {
     transform: scaleX(1);
   }
+}
+
+.primary-nav__list a[aria-current="page"] {
+  color: var(--color-accent);
 }
 
 /* ---------- Footer ---------- */

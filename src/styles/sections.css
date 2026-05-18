@@ -152,6 +152,62 @@
   }
 }
 
+/* ---------- Page hero (smaller hero for detail pages) ---------- */
+.page-hero {
+  position: relative;
+  min-height: 60svh;
+  display: flex;
+  align-items: flex-end;
+  padding-top: 8rem;
+  padding-bottom: clamp(2rem, 6vw, 4rem);
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.page-hero__media {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background:
+    radial-gradient(ellipse at 30% 40%, rgba(245, 177, 61, 0.22), transparent 55%),
+    radial-gradient(ellipse at 80% 80%, rgba(255, 122, 69, 0.18), transparent 55%),
+    linear-gradient(180deg, #0c0c10 0%, #07070a 100%);
+}
+
+.page-hero__overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    180deg,
+    rgba(10, 10, 11, 0.1) 0%,
+    rgba(10, 10, 11, 0.4) 60%,
+    var(--color-bg) 100%
+  );
+}
+
+.page-hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  max-width: 60ch;
+}
+
+.page-hero__headline {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--fs-3xl);
+  line-height: 0.98;
+  letter-spacing: -0.025em;
+  text-transform: uppercase;
+}
+
+.page-hero__subline {
+  font-size: var(--fs-lg);
+  color: var(--color-muted);
+  max-width: 42ch;
+}
+
 /* ---------- About ---------- */
 .section--about {
   background: var(--color-bg);
@@ -166,6 +222,69 @@
   font-size: var(--fs-lg);
   color: var(--color-muted);
   margin-bottom: var(--space-3);
+}
+
+/* ---------- Long-form bio (Über-mich page) ---------- */
+.bio {
+  max-width: 60ch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.bio p {
+  font-size: var(--fs-lg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+.bio p + p {
+  color: var(--color-muted);
+}
+
+/* ---------- Values list (Über-mich page) ---------- */
+.value-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+}
+
+@media (min-width: 720px) {
+  .value-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-3);
+  }
+}
+
+.value-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-3);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  position: relative;
+}
+
+.value-item__number {
+  font-family: var(--font-display);
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  color: var(--color-accent);
+  letter-spacing: 0.1em;
+}
+
+.value-item__title {
+  font-family: var(--font-display);
+  font-size: var(--fs-xl);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.value-item__body {
+  color: var(--color-muted);
 }
 
 /* ---------- Services ---------- */

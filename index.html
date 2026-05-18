@@ -20,9 +20,10 @@
 <body>
   <a class="skip-link" href="#main">Zum Inhalt springen</a>
 
+  <!-- SHARED:HEADER — keep in sync across pages -->
   <header class="site-header">
     <div class="site-header__inner">
-      <a class="brand" href="#top" aria-label="DJ Collin Startseite">
+      <a class="brand" href="/" aria-label="DJ Collin Startseite">
         <span class="brand__mark">DJ</span>
         <span class="brand__name">Collin</span>
       </a>
@@ -36,13 +37,14 @@
 
       <nav id="primary-nav" class="primary-nav" aria-label="Hauptnavigation">
         <ul class="primary-nav__list">
-          <li><a href="#ueber-mich">Über mich</a></li>
+          <li><a href="/ueber-mich/">Über mich</a></li>
           <li><a href="#leistungen">Leistungen</a></li>
           <li><a href="#kontakt">Kontakt</a></li>
         </ul>
       </nav>
     </div>
   </header>
+  <!-- /SHARED:HEADER -->
 
   <main id="main">
     <section class="hero" id="top">
@@ -60,7 +62,7 @@
         </p>
         <div class="hero__actions">
           <a class="button button--primary" href="#kontakt">Jetzt anfragen</a>
-          <a class="button button--ghost" href="#ueber-mich">Mehr über mich</a>
+          <a class="button button--ghost" href="/ueber-mich/">Mehr über mich</a>
         </div>
       </div>
 
@@ -86,7 +88,7 @@
           FILTER ablegen. Augen zu und den Alltagsstress für einen Moment sein lassen.
           Ich bin gerne dabei. LASST UNS FEIERN.
         </p>
-        <a class="link-arrow" href="/ueber-mich.html">
+        <a class="link-arrow" href="/ueber-mich/">
           Mehr über mich erfahren
           <span aria-hidden="true">→</span>
         </a>
@@ -96,7 +98,7 @@
     <section class="section section--services" id="leistungen">
       <div class="container">
         <p class="section__eyebrow">Leistungen</p>
-        <h2 class="section__heading">Wofür ich gebucht werde</h2>
+        <h2 class="section__heading">Allens op’n Blick</h2>
 
         <ul class="services" role="list">
           <li class="service-card">
@@ -227,6 +229,7 @@
     </section>
   </main>
 
+  <!-- SHARED:FOOTER — keep in sync across pages -->
   <footer class="site-footer">
     <div class="container site-footer__inner">
       <p class="site-footer__brand">© 2026 Collin Gronmeyer · Hamburg</p>
@@ -236,6 +239,7 @@
       </ul>
     </div>
   </footer>
+  <!-- /SHARED:FOOTER -->
 
   <script type="module" src="/src/main.js"></script>
 </body>
