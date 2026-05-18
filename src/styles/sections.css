@@ -503,3 +503,45 @@
   opacity: 1;
   transform: none;
 }
+
+/* ---------- Breadcrumb ---------- */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  padding-top: 6rem;
+  padding-bottom: var(--space-2);
+  font-size: var(--fs-sm);
+  color: var(--color-muted);
+}
+
+.breadcrumb a {
+  color: var(--color-muted);
+  transition: color var(--t-fast) var(--ease-out);
+}
+
+.breadcrumb a:hover {
+  color: var(--color-accent);
+}
+
+.breadcrumb [aria-current="page"] {
+  color: var(--color-text);
+}
+
+.breadcrumb + .page-hero {
+  padding-top: var(--space-3);
+}
+
+/* ---------- Lead paragraph ---------- */
+.lead {
+  max-width: 60ch;
+  font-size: var(--fs-lg);
+  color: var(--color-muted);
+  line-height: 1.6;
+}
+
+/* ---------- Section: weitere Leistungen ---------- */
+.section--also {
+  background: var(--color-bg-alt);
+}
