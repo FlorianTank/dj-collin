@@ -33,6 +33,14 @@ if (!prefersReducedMotion && "IntersectionObserver" in window) {
   const targets = document.querySelectorAll(".section");
   targets.forEach((el) => el.classList.add("reveal"));
 
+  // When the page loaded via a hash link, the target section is already in
+  // view — skip the fade-in so it doesn't briefly disappear while the
+  // IntersectionObserver fires asynchronously.
+  if (window.location.hash) {
+    const hashTarget = document.querySelector(window.location.hash);
+    if (hashTarget) hashTarget.classList.add("is-visible");
+  }
+
   const observer = new IntersectionObserver(
     (entries, obs) => {
       entries.forEach((entry) => {
