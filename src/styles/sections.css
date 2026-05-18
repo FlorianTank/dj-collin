@@ -545,3 +545,66 @@
 .section--also {
   background: var(--color-bg-alt);
 }
+
+/* ---------- Photo gallery ---------- */
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-1);
+  margin-top: var(--space-3);
+}
+
+@media (min-width: 720px) {
+  .photo-gallery {
+    grid-template-columns: repeat(3, 1fr);
+    gap: calc(var(--space-1) * 1.5);
+  }
+}
+
+.photo-gallery__item {
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  position: relative;
+}
+
+.photo-gallery__item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(10, 10, 11, 0.72) 0%,
+    rgba(245, 177, 61, 0.06) 55%,
+    transparent 100%
+  );
+  pointer-events: none;
+}
+
+.photo-gallery__caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.75rem var(--space-2);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(244, 244, 245, 0.75);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.photo-gallery__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform var(--t-med) var(--ease-out);
+}
+
+.photo-gallery__item:hover img {
+  transform: scale(1.04);
+}
