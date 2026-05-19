@@ -256,7 +256,7 @@
 }
 
 .button--primary:hover {
-  background: #ffc457;
+  background: #7fd6ff;
   box-shadow: 0 18px 40px -10px var(--color-accent-glow);
 }
 
@@ -325,5 +325,5 @@
 
 .link-arrow:hover {
   gap: 0.9rem;
-  color: #ffc457;
+  color: #7fd6ff;
 }

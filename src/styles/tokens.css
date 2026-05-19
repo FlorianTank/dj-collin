@@ -10,9 +10,9 @@
   --color-muted: #a1a1aa;
   --color-faint: #71717a;
 
-  --color-accent: #f5b13d;       /* warm amber */
-  --color-accent-hot: #ff7a45;   /* secondary, used in gradients */
-  --color-accent-glow: rgba(245, 177, 61, 0.35);
+  --color-accent: #4ea0f0;       /* harbor blue */
+  --color-accent-hot: #7fd6ff;   /* light cyan, used in gradients */
+  --color-accent-glow: rgba(78, 160, 240, 0.35);
 
   /* Typography */
   --font-display: "Space Grotesk", system-ui, -apple-system, sans-serif;
@@ -51,5 +51,5 @@
 
   /* Shadows / glow */
   --shadow-card: 0 30px 60px -30px rgba(0, 0, 0, 0.6);
-  --ring-focus: 0 0 0 3px rgba(245, 177, 61, 0.5);
+  --ring-focus: 0 0 0 3px rgba(78, 160, 240, 0.5);
 }
