@@ -636,6 +636,56 @@
   line-height: 1.6;
 }
 
+/* ---------- Legal-page prose (Impressum, Datenschutz) ---------- */
+.legal-content {
+  max-width: 70ch;
+}
+
+.legal-content h2 {
+  font-family: var(--font-display);
+  font-size: var(--fs-xl);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-top: var(--space-4);
+  margin-bottom: var(--space-2);
+  color: var(--color-text);
+}
+
+.legal-content h2:first-child {
+  margin-top: 0;
+}
+
+.legal-content h3 {
+  font-family: var(--font-display);
+  font-size: var(--fs-lg);
+  font-weight: 700;
+  margin-top: var(--space-3);
+  margin-bottom: var(--space-1);
+  color: var(--color-text);
+}
+
+.legal-content p,
+.legal-content address {
+  color: var(--color-muted);
+  line-height: 1.6;
+  margin-bottom: var(--space-2);
+}
+
+.legal-content address {
+  font-style: normal;
+  color: var(--color-text);
+}
+
+.legal-content a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.legal-content a:hover {
+  color: #ffc457;
+}
+
 /* ---------- Section: weitere Leistungen ---------- */
 .section--also {
   background: var(--color-bg-alt);
