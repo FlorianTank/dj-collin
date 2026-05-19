@@ -9,6 +9,7 @@ export default defineConfig({
         ueberMich:  resolve(__dirname, "ueber-mich/index.html"),
         leistungen: resolve(__dirname, "leistungen/index.html"),
         hochzeiten: resolve(__dirname, "leistungen/hochzeiten/index.html"),
+        faq:        resolve(__dirname, "faq/index.html"),
       },
     },
   },

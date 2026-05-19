@@ -602,6 +602,40 @@
   padding-top: var(--space-2);
 }
 
+/* Compact vertical padding for sections that hold only a single paragraph */
+.section--lead {
+  padding-block: clamp(1.5rem, 4vw, 3rem);
+}
+
+/* ---------- FAQ list (definition-list-based Q&A) ---------- */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-top: var(--space-2);
+}
+
+.faq-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.faq-item__question {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--fs-lg);
+  color: var(--color-text);
+  letter-spacing: -0.01em;
+}
+
+.faq-item__answer {
+  margin: 0;
+  margin-inline-start: 0;
+  color: var(--color-muted);
+  line-height: 1.6;
+}
+
 /* ---------- Section: weitere Leistungen ---------- */
 .section--also {
   background: var(--color-bg-alt);
