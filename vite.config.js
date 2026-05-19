@@ -10,6 +10,7 @@ export default defineConfig({
         leistungen: resolve(__dirname, "leistungen/index.html"),
         hochzeiten: resolve(__dirname, "leistungen/hochzeiten/index.html"),
         faq:        resolve(__dirname, "faq/index.html"),
+        kontakt:     resolve(__dirname, "kontakt/index.html"),
         impressum:   resolve(__dirname, "impressum/index.html"),
         datenschutz: resolve(__dirname, "datenschutz/index.html"),
       },

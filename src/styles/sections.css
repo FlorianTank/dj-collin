@@ -411,6 +411,12 @@
   border-color: transparent;
 }
 
+/* Whole-card link variant (used on /kontakt/ for tap-anywhere targets) */
+a.service-card {
+  text-decoration: none;
+  color: inherit;
+}
+
 .service-card:hover::after {
   opacity: 1;
 }
