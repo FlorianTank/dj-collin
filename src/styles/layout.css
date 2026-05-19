@@ -32,20 +32,14 @@
 
 .brand {
   display: inline-flex;
-  align-items: baseline;
-  gap: 0.4rem;
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 1.25rem;
-  letter-spacing: 0.02em;
+  align-items: center;
 }
 
-.brand__mark {
-  color: var(--color-accent);
-}
-
-.brand__name {
-  color: var(--color-text);
+.brand__logo {
+  height: 44px;
+  width: auto;
+  display: block;
+  border-radius: var(--radius-sm);
 }
 
 /* Nav (mobile-first: hidden behind toggle) */
